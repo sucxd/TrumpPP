@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion;
 
 public class BrainRotMechanic : MonoBehaviour
 {
-    public ContinuousMoveProvider moveProvider; // Changed from public to private, we'll assign it in code.
+    public ContinuousMoveProviderBase moveProvider; // Changed from public to private, we'll assign it in code.
     public float brainRotThreshold = 5f; // Time threshold for brain rot effect
     private float timeLookingAtUI = 0f;
 

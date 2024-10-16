@@ -1,9 +1,10 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement; // Ensure this namespace is included
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion; // Ensure this namespace is included
 
 public class BrainRotManager : MonoBehaviour
 {
-    public ContinuousMoveProvider moveProvider; // Ensure this is assigned in the Inspector
+    public ContinuousMoveProviderBase moveProvider; // Ensure this is assigned in the Inspector
 
     void Start()
     {

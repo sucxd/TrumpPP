@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement;
-using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets; // Make sure you have this using directive
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion;
 
 public class GazeDetection : MonoBehaviour
 {
@@ -8,18 +8,13 @@ public class GazeDetection : MonoBehaviour
     public VignetteEffect vignetteEffect;   // Reference to VignetteEffect
     public float rayLength = 5f;            // Length of the rays
     public int numberOfRays = 3;            // Number of rays to shoot
-    public float rayDensity = 10f;           // Angle density of the rays
+    public float rayDensity = 10f;          // Angle density of the rays
     public string uiTag = "UI";             // Tag for UI detection
    
-    public float gazeThreshold = 4f;         // Time threshold for gaze effect
+    public float gazeThreshold = 4f;        // Time threshold for gaze effect
     private float timeLookingAtUI = 0f;     // Track time looking at the UI
 
-    public DynamicMoveProvider dynamicMoveProvider; // Reference to Dynamic Move Provider
-
-    void Start()
-    {
-
-    }
+    public ContinuousMoveProviderBase dynamicMoveProvider; // Reference to Dynamic Move Provider
 
     void Update()
     {
@@ -37,6 +32,9 @@ public class GazeDetection : MonoBehaviour
         {
             // Calculate the ray direction with a density offset
             Vector3 rayDirection = Quaternion.Euler(0, (i - (numberOfRays - 1) / 2f) * rayDensity, 0) * direction;
+
+            // Draw the ray in the Scene view for debugging
+            Debug.DrawRay(origin, rayDirection * rayLength, Color.green);
 
             // Perform the raycast
             if (Physics.Raycast(origin, rayDirection, out RaycastHit hit, rayLength))
