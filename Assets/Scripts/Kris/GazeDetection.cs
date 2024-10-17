@@ -41,7 +41,7 @@ public class GazeDetection : MonoBehaviour
             {
                 if (hit.collider != null && hit.collider.CompareTag(uiTag))
                 {
-                    Debug.Log("Hit a UI element: " + hit.collider.name);
+                    //Debug.Log("Hit a UI element: " + hit.collider.name);
                     isLookingAtUI = true; // We are looking at a UI element
                     
                     // Increment timeLookingAtUI while looking at the UI
@@ -60,7 +60,7 @@ public class GazeDetection : MonoBehaviour
                         if (continuousMoveProvider != null)
                         {
                             continuousMoveProvider.moveSpeed = Mathf.Max(continuousMoveProvider.moveSpeed - 0.1f, 0f);
-                            Debug.Log("Player speed reduced due to UI detection: " + continuousMoveProvider.moveSpeed);
+                            //Debug.Log("Player speed reduced due to UI detection: " + continuousMoveProvider.moveSpeed);
                         }
 
                         // Increase vignette effect (optional)
