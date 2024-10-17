@@ -14,7 +14,7 @@ public class GazeDetection : MonoBehaviour
     public float gazeThreshold = 4f;        // Time threshold for gaze effect
     private float timeLookingAtUI = 0f;     // Track time looking at the UI
 
-    public ContinuousMoveProviderBase dynamicMoveProvider; // Reference to Dynamic Move Provider
+    public ContinuousMoveProviderBase continuousMoveProvider; // Reference to Dynamic Move Provider
 
     void Update()
     {
@@ -57,10 +57,10 @@ public class GazeDetection : MonoBehaviour
                         }
 
                         // Decrease speed in Dynamic Move Provider
-                        if (dynamicMoveProvider != null)
+                        if (continuousMoveProvider != null)
                         {
-                            dynamicMoveProvider.moveSpeed = Mathf.Max(dynamicMoveProvider.moveSpeed - 0.1f, 0f);
-                            Debug.Log("Player speed reduced due to UI detection: " + dynamicMoveProvider.moveSpeed);
+                            continuousMoveProvider.moveSpeed = Mathf.Max(continuousMoveProvider.moveSpeed - 0.1f, 0f);
+                            Debug.Log("Player speed reduced due to UI detection: " + continuousMoveProvider.moveSpeed);
                         }
 
                         // Increase vignette effect (optional)
