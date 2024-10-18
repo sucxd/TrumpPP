@@ -19,6 +19,7 @@ public class SpoonCollision : MonoBehaviour
             coffeeBeans.SetActive(true);
             Debug.Log("Is in trigger");
         }
+        
     }
 
    
