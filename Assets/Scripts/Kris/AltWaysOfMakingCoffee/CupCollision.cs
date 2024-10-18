@@ -19,10 +19,10 @@ public class CupCollision : MonoBehaviour
         
     }
     private void OnTriggerEnter(Collider other) {
-        if(coffeBeans.activeSelf && other.CompareTag("CoffeeCup"))
+        if(!coffeBeans.activeSelf && other.CompareTag("CoffeeCup"))
         {
             coffeBeans.SetActive(false);
-            coffeBeans.SetActive(true);
+            coffeeInCup.SetActive(true);
         }
     }
 }
