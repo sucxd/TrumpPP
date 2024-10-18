@@ -15,11 +15,11 @@ public class VignetteEffect : MonoBehaviour
         // Find the Vignette effect in the Post-Processing Volume
         if (postProcessVolume.profile.TryGet(out vignette))
         {
-            Debug.Log("Vignette effect found in PostProcessVolume.");
+           // Debug.Log("Vignette effect found in PostProcessVolume.");
         }
         else
         {
-            Debug.LogWarning("No Vignette effect found in PostProcessVolume.");
+           // Debug.LogWarning("No Vignette effect found in PostProcessVolume.");
         }
     }
 
