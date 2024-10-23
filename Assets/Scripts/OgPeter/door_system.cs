@@ -9,7 +9,7 @@ public class door_Interactable : XRGrabInteractable
     [SerializeField] XRSocketInteractor keySocket;
     [SerializeField] bool isLocked;
 
-    private Transform parentTransform;
+    public Transform parentTransform;
     private const string defaultLayer = "Default";
     private const string grabLayer = "Grab";
     private bool isGrabbed;
@@ -111,3 +111,5 @@ public class door_Interactable : XRGrabInteractable
         interactionLayers = InteractionLayerMask.GetMask(mask);
     }
 }
+
+
