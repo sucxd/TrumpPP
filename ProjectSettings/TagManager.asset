@@ -8,6 +8,7 @@ TagManager:
   - SpoonTip
   - CoffeeBeans
   - CoffeeCup
+  - DoorLock
   layers:
   - Default
   - TransparentFX
