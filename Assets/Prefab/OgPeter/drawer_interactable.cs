@@ -11,24 +11,23 @@ public class drawer_Interactable : XRGrabInteractable
 
     private Transform parentTransform;
     private const string defaultLayer = "Default";
-    private const string grabLayer = "Grab";
+    private const string interactableLayer = "Interactable";
     private bool isGrabbed;
     private Vector3 limitPositions;
     [SerializeField] float drawerLimitZ = 0.85f;
-    [SerializeField] private Vector3 limitDistances = new Vector3(.02f,.02f,0);
-
+    [SerializeField] private Vector3 limitDistances = new Vector3(.02f, .02f, 0);
 
     void Start()
     {
-        if(keySocket !=null)
+        if (keySocket != null)
         {
             keySocket.selectEntered.AddListener(OnDrawerUnlocked);
             keySocket.selectExited.AddListener(OnDrawerLocked);
-
         }
         parentTransform = transform.parent.transform;
         limitPositions = drawerTrasnform.localPosition;
     }
+
     private void OnDrawerLocked(SelectExitEventArgs arg0)
     {
         isLocked = true;
@@ -40,10 +39,11 @@ public class drawer_Interactable : XRGrabInteractable
         isLocked = false;
         Debug.Log("****DRAWER UNLOCKED");
     }
+
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
-        if(!isLocked)
+        if (!isLocked)
         {
             transform.SetParent(parentTransform);
             isGrabbed = true;
@@ -52,48 +52,47 @@ public class drawer_Interactable : XRGrabInteractable
         {
             ChangeLayerMask(defaultLayer);
         }
-
     }
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
         base.OnSelectExited(args);
-        ChangeLayerMask(grabLayer);
+        ChangeLayerMask(interactableLayer); // Changed to "Interactable"
         isGrabbed = false;
         transform.localPosition = drawerTrasnform.localPosition;
     }
 
-
     // Update is called once per frame
     void Update()
     {
-        if(isGrabbed && drawerTrasnform != null)
+        if (isGrabbed && drawerTrasnform != null)
         {
-            drawerTrasnform.localPosition = new Vector3(drawerTrasnform.localPosition.x
-            , drawerTrasnform.localPosition.y, transform.localPosition.z);
+            drawerTrasnform.localPosition = new Vector3(drawerTrasnform.localPosition.x,
+                drawerTrasnform.localPosition.y, transform.localPosition.z);
 
             CheckLimits();
         }
     }
+
     private void CheckLimits()
     {
-        if(transform.localPosition.x >= limitPositions.x + limitDistances.x ||
+        if (transform.localPosition.x >= limitPositions.x + limitDistances.x ||
             transform.localPosition.x <= limitPositions.x - limitDistances.x)
         {
             ChangeLayerMask(defaultLayer);
         }
-        else if(transform.localPosition.y >= limitPositions.y + limitDistances.y ||
-            transform.localPosition.y <= limitPositions.y - limitDistances.y)
+        else if (transform.localPosition.y >= limitPositions.y + limitDistances.y ||
+                 transform.localPosition.y <= limitPositions.y - limitDistances.y)
         {
             ChangeLayerMask(defaultLayer);
         }
-        else if(drawerTrasnform.localPosition.z <= limitPositions.z - limitDistances.z)
+        else if (drawerTrasnform.localPosition.z <= limitPositions.z - limitDistances.z)
         {
             isGrabbed = false;
             drawerTrasnform.localPosition = limitPositions;
             ChangeLayerMask(defaultLayer);
         }
-        else if(drawerTrasnform.localPosition.z >= drawerLimitZ + limitDistances.z)
+        else if (drawerTrasnform.localPosition.z >= drawerLimitZ + limitDistances.z)
         {
             isGrabbed = false;
             drawerTrasnform.localPosition = new Vector3(
