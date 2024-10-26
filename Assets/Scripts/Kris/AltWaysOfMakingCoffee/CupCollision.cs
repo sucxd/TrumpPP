@@ -7,6 +7,9 @@ public class CupCollision : MonoBehaviour
     
     public GameObject coffeeInCup;
     public GameObject coffeBeans;
+    
+    [SerializeField]
+    private SpoonCollision spoonCollision;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,8 @@ public class CupCollision : MonoBehaviour
         
     }
     private void OnTriggerEnter(Collider other) {
-        if(!coffeBeans.activeSelf && other.CompareTag("CoffeeCup"))
+
+        if(spoonCollision.coffeeBeans == true && other.CompareTag("CoffeeCup"))
         {
             coffeBeans.SetActive(false);
             coffeeInCup.SetActive(true);
