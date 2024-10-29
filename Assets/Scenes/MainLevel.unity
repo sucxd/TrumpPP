@@ -2064,8 +2064,8 @@ Transform:
   m_GameObject: {fileID: 262410822}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.105}
-  m_LocalScale: {x: 0.6474, y: 1, z: 0.5634}
+  m_LocalPosition: {x: 0, y: 0.2603, z: -0.105}
+  m_LocalScale: {x: 0.6474, y: 0.5915133, z: 0.5634}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1355384346}
@@ -14038,79 +14038,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1061707977451036005}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &3288542154671621458
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1146661142454478556, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 75e345836577a7245a546285a4770986, type: 2}
-    - target: {fileID: 6992199798380163895, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_Name
-      value: Coffee cup with coffee UV scaled (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656849472444541325, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.7369344
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656849472444541325, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.10000086
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656849472444541325, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -47.2272
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656849472444541325, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656849472444541325, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656849472444541325, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656849472444541325, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656849472444541325, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656849472444541325, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656849472444541325, guid: a68ecf736cbb436449fd9395f55bf393,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a68ecf736cbb436449fd9395f55bf393, type: 3}
 --- !u!23 &3336182264621907004
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15736,6 +15663,74 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.004968149, y: 0.026634516, z: 0.0060432274}
   m_Center: {x: -0.089188635, y: 0.013119458, z: -0.005381307}
+--- !u!1001 &7947784892290674405
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8204305032938888994, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_Name
+      value: Coffee cup with coffee UV scaled (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831659307485742488, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831659307485742488, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.701
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831659307485742488, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -46.386
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831659307485742488, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831659307485742488, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831659307485742488, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831659307485742488, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831659307485742488, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831659307485742488, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831659307485742488, guid: a68ecf736cbb436449fd9395f55bf393,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a68ecf736cbb436449fd9395f55bf393, type: 3}
 --- !u!1 &8071877907266451529
 GameObject:
   m_ObjectHideFlags: 0
@@ -16890,4 +16885,4 @@ SceneRoots:
   - {fileID: 543450652068301527}
   - {fileID: 4099204934102454099}
   - {fileID: 7662815566306679163}
-  - {fileID: 3288542154671621458}
+  - {fileID: 7947784892290674405}
