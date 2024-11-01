@@ -9,6 +9,7 @@ TagManager:
   - CoffeeBeans
   - CoffeeCup
   - DoorLock
+  - Shape
   layers:
   - Default
   - TransparentFX
@@ -17,10 +18,10 @@ TagManager:
   - Water
   - UI
   - Keyhole
-  - Drawer_Limit
-  - 
-  - 
-  - 
+  - Cylinder
+  - Square
+  - Triangle
+  - Shape
   - 
   - 
   - 
