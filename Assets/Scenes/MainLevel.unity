@@ -9687,6 +9687,19 @@ MonoBehaviour:
   freezeButton: {fileID: 1725323240}
   newMesh: {fileID: 0}
   freezeDuration: 3
+--- !u!114 &758323270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758323267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d4c6fb9bf34e4c42afc5a8f92e4c55f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveProvider: {fileID: 250930813034738196}
 --- !u!1 &774808907
 GameObject:
   m_ObjectHideFlags: 0
@@ -11775,6 +11788,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 758323269}
+    - targetCorrespondingSourceObject: {fileID: 3989549305464805399, guid: b5be909d3f8cb7348a40baecaeb4a855,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 758323270}
   m_SourcePrefab: {fileID: 100100000, guid: b5be909d3f8cb7348a40baecaeb4a855, type: 3}
 --- !u!1 &1020852177
 GameObject:
@@ -23840,6 +23857,18 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 571156616088968144}
   m_SourcePrefab: {fileID: 100100000, guid: fa4fe4a8612330942a66d4d81b98edbf, type: 3}
+--- !u!114 &250930813034738196 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4152418484588673030, guid: fa4fe4a8612330942a66d4d81b98edbf,
+    type: 3}
+  m_PrefabInstance: {fileID: 250930813034738195}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &270668372019475720
 GameObject:
   m_ObjectHideFlags: 0
