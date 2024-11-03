@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class UIDOingTask : MonoBehaviour
+public class UIDoingTask : MonoBehaviour
 {
     public GameObject[] uiElements; // Array to hold UI elements to be activated
     public float displayTime = 5f; // Time each UI element stays active
