@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -6,66 +7,98 @@ using UnityEngine.XR.Interaction.Toolkit;
 [RequireComponent(typeof(Rigidbody))]
 public class ItemInteraction : MonoBehaviour
 {
-    public AudioClip grabSound;    // Sound played when the item is grabbed
-    public AudioClip dropSound;    // Sound played when the item is dropped
-    public AudioClip dragSound;    // Sound played when the item is dragged
-
+    public AudioClip grabSound;
+    public AudioClip dropSound;
+    public AudioClip dragSound;
+    public AudioClip collisionSoundDefault;
     private AudioSource audioSource;
     private Rigidbody rb;
-    private Coroutine dragSoundCoroutine; // Coroutine for managing drag sound
-    private bool isDragging; // Track if the item is being dragged
+    private bool isDragging;
+    private XRGrabInteractable interactable;
 
-    private void Awake()
+    [System.Serializable]
+    public struct CollisionSound
+    {
+        public string tag;
+        public AudioClip sound;
+    }
+
+    public CollisionSound[] collisionSounds;
+    private Dictionary<string, AudioClip> collisionSoundDict;
+
+    void Awake()
     {
         audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
+        interactable = GetComponent<XRGrabInteractable>();
+        collisionSoundDict = new Dictionary<string, AudioClip>();
 
-        // Set audio properties for spatial sound
-        audioSource.spatialBlend = 1.0f; // 3D sound
+        foreach (var collisionSound in collisionSounds)
+        {
+            if (!collisionSoundDict.ContainsKey(collisionSound.tag))
+            {
+                collisionSoundDict.Add(collisionSound.tag, collisionSound.sound);
+            }
+        }
     }
 
-    // Called when the object is grabbed
-    public void OnGrab()
+    private void OnEnable()
+    {
+        if (interactable != null)
+        {
+            interactable.selectEntered.AddListener(OnGrab);
+            interactable.selectExited.AddListener(OnDrop);
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (interactable != null)
+        {
+            interactable.selectEntered.RemoveListener(OnGrab);
+            interactable.selectExited.RemoveListener(OnDrop);
+        }
+    }
+
+    private void OnGrab(SelectEnterEventArgs args)
     {
         PlaySound(grabSound);
-        rb.isKinematic = true; // Disable physics while held
-        isDragging = true; // Set dragging to true
-        dragSoundCoroutine = StartCoroutine(PlayDraggingSound()); // Start dragging sound coroutine
+        isDragging = true;
+
+        if (dragSound != null)
+        {
+            audioSource.clip = dragSound;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
     }
 
-    // Called when the object is released
-    public void OnRelease()
+    private void OnDrop(SelectExitEventArgs args)
     {
-        rb.isKinematic = false; // Enable physics for dropping
-        isDragging = false; // Set dragging to false
-        if (dragSoundCoroutine != null)
+        PlaySound(dropSound);
+        isDragging = false;
+
+        if (audioSource.isPlaying && audioSource.clip == dragSound)
         {
-            StopCoroutine(dragSoundCoroutine); // Stop dragging sound coroutine
-            dragSoundCoroutine = null; // Reset coroutine reference
+            audioSource.Stop();
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Only play drop sound if the object is not being held
-        if (!rb.isKinematic && dropSound != null)
+        if (collisionSoundDict.TryGetValue(collision.gameObject.tag, out AudioClip collisionSound))
         {
-            PlaySound(dropSound);
+            PlaySound(collisionSound);
         }
-    }
-
-    private IEnumerator PlayDraggingSound()
-    {
-        while (isDragging) // Loop while the item is being dragged
+        else if (collisionSoundDefault != null)
         {
-            PlaySound(dragSound);
-            yield return new WaitForSeconds(0.5f); // Adjust the frequency of the sound as necessary
+            PlaySound(collisionSoundDefault);
         }
     }
 
     private void PlaySound(AudioClip clip)
     {
-        if (clip != null)
+        if (clip != null && audioSource != null)
         {
             audioSource.PlayOneShot(clip);
         }
