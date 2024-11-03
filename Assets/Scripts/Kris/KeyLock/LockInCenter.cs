@@ -1,31 +1,32 @@
 using UnityEngine;
 
 public class LockInCenter : MonoBehaviour
-{
+{   
+    [SerializeField]
+    string snapTag = "CoffeeCup"; 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("CoffeeCup"))
+        if (other.CompareTag(snapTag))
         {
-            // Snap the object to the center of this object
             other.transform.position = transform.position;
-            other.transform.rotation = transform.rotation; // Optional: Match rotation if desired
+            other.transform.rotation = transform.rotation;
 
             Rigidbody rb = other.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.isKinematic = true; // Make the object static when it snaps
+                rb.isKinematic = true;
             }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("CoffeeCup"))
+        if (other.CompareTag(snapTag))
         {
             Rigidbody rb = other.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.isKinematic = false; // Allow it to be picked up again
+                rb.isKinematic = false;
             }
         }
     }
