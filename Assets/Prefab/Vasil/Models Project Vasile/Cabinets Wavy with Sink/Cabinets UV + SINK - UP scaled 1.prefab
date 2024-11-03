@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &127226138538868679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.82347804
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0884
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.706627
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.32
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.099999905
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -52.664
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710784
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1001281382438128537, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2def97b7fa5bfb34e8146fb1ff6001aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_Name
+      value: Cabinets UV + SINK - UP scaled 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210357320963261148, guid: 2bd0c9896eb4765488ef22458572273d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e0189bd543043db4f9b5908ee7f15bf2, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2bd0c9896eb4765488ef22458572273d, type: 3}

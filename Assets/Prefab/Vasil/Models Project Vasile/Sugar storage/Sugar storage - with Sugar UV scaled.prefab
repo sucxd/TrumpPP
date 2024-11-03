@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2517058096799264249
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.8189564
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.95437765
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.70102024
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8166536757275737851, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 517cecd51c756544b8828df1468fc6a5, type: 2}
+    - target: {fileID: -4144620142480579638, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 517cecd51c756544b8828df1468fc6a5, type: 2}
+    - target: {fileID: -644281558756936074, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 517cecd51c756544b8828df1468fc6a5, type: 2}
+    - target: {fileID: 919132149155446097, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_Name
+      value: Sugar storage - with Sugar UV scaled
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4275881477322595882, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 517cecd51c756544b8828df1468fc6a5, type: 2}
+    - target: {fileID: 7418098771544918504, guid: 853cff92a96ac494c911550fca542f37, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 517cecd51c756544b8828df1468fc6a5, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 853cff92a96ac494c911550fca542f37, type: 3}
