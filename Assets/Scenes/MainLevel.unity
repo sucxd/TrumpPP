@@ -1001,6 +1001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashlight: {fileID: 0}
+  flashlightCollider: {fileID: 0}
   toggleAction:
     m_Name: Toggle
     m_Type: 0
@@ -16054,6 +16055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashlight: {fileID: 0}
+  flashlightCollider: {fileID: 92579410}
   toggleAction:
     m_Name: Toggle
     m_Type: 0

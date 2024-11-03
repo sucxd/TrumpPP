@@ -5,27 +5,28 @@ using UnityEngine.InputSystem;
 
 public class FlashlightToggle : MonoBehaviour
 {
-    public Light flashlight; //light i created
+    public Light flashlight;
+    public CapsuleCollider flashlightCollider;
     private bool isFlashlightOn = false;
-    
+
     public InputAction toggleAction;
 
     private void OnEnable()
     {
         toggleAction.Enable();
-        toggleAction.performed += ToggleFlashlight; //on press?
+        toggleAction.performed += ToggleFlashlight;
     }
 
     private void OnDisable()
     {
-
-        toggleAction.Disable();
         toggleAction.performed -= ToggleFlashlight;
+        toggleAction.Disable();
     }
 
     private void ToggleFlashlight(InputAction.CallbackContext context)
     {
         isFlashlightOn = !isFlashlightOn;
         flashlight.enabled = isFlashlightOn;
+        flashlightCollider.enabled = isFlashlightOn;
     }
 }
