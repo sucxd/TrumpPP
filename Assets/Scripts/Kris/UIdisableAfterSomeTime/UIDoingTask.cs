@@ -5,7 +5,20 @@ public class UIDoingTask : MonoBehaviour
 {
     [SerializeField] private GameObject[] uiElements;
     [SerializeField] private float displayTime = 5f;
-    [SerializeField] private float spinSpeed = 50f; // Speed of rotation on the Z-axis for each UI element
+
+    private void Start()
+    {
+        ActivateAllUIElements();
+    }
+
+    private void ActivateAllUIElements()
+    {
+        foreach (var uiElement in uiElements)
+        {
+            uiElement.SetActive(true);
+            StartCoroutine(DisableAfterTime(uiElement, displayTime));
+        }
+    }
 
     public void ShowNextUIElement()
     {
@@ -24,17 +37,6 @@ public class UIDoingTask : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         uiElement.SetActive(false);
-    }
-
-    private void Update()
-    {
-        foreach (var uiElement in uiElements)
-        {
-            if (uiElement.activeSelf)
-            {
-                uiElement.transform.Rotate(0, 0, spinSpeed * Time.deltaTime);
-            }
-        }
     }
 
     public void ResetUIElements()
