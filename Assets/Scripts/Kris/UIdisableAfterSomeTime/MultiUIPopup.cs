@@ -3,21 +3,21 @@ using UnityEngine;
 
 public class MultiUIPopup : MonoBehaviour
 {
-    public GameObject[] uiElements;
-    public float displayTime = 5f;
+    [SerializeField] private GameObject[] uiElements;
+    [SerializeField] private float displayTime = 5f;
 
-    void Start()
+    private void Start()
     {
-        StartCoroutine(HideAllAfterTime());
-    }
-
-    IEnumerator HideAllAfterTime()
-    {
-        yield return new WaitForSeconds(displayTime);
-
         foreach (GameObject ui in uiElements)
         {
-            ui.SetActive(false);
+            ui.SetActive(true);
+            StartCoroutine(HideAfterTime(ui));
         }
+    }
+
+    private IEnumerator HideAfterTime(GameObject uiElement)
+    {
+        yield return new WaitForSeconds(displayTime);
+        uiElement.SetActive(false);
     }
 }
