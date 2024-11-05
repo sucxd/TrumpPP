@@ -5,17 +5,17 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class DoorLock : MonoBehaviour
 {
-    public XRSocketInteractor keyholeSocket; // Reference to the keyhole socket interactor
-    public XRGrabInteractable handle; // Reference to the handle's interactable component
-    public XRGrabInteractable key; // Reference to the key interactable component
-    public Rigidbody doorRigidbody; // Reference to the door's rigidbody
+    public XRSocketInteractor keyholeSocket;
+    public XRGrabInteractable handle;
+    public XRGrabInteractable key;
+    public Rigidbody doorRigidbody;
 
     private bool isLocked = true;
 
     private void Start()
     {
         if (handle != null)
-            handle.enabled = false; // Disable handle interaction initially
+            handle.enabled = false;
 
         if (keyholeSocket != null)
             keyholeSocket.selectEntered.AddListener(OnKeyInserted);
@@ -23,7 +23,7 @@ public class DoorLock : MonoBehaviour
 
     private void OnKeyInserted(SelectEnterEventArgs args)
     {
-        if (args.interactableObject == key) // Check if the inserted object is the key
+        if (args.interactableObject == key)
         {
             LockKeyInPlace();
             UnlockDoor();
@@ -34,10 +34,10 @@ public class DoorLock : MonoBehaviour
     {
         if (key != null)
         {
-            key.interactionLayerMask = 0; // Disable interactions on the key
-            key.transform.SetParent(keyholeSocket.transform); // Set key as a child of the keyhole
-            key.transform.localPosition = Vector3.zero; // Position it exactly in the keyhole
-            key.transform.localRotation = Quaternion.identity; // Reset rotation
+            key.interactionLayerMask = 0;
+            key.transform.SetParent(keyholeSocket.transform);
+            key.transform.localPosition = Vector3.zero; 
+            key.transform.localRotation = Quaternion.identity; 
             Debug.Log("Key locked in place.");
         }
     }
