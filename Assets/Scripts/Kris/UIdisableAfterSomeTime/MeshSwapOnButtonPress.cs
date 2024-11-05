@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class EnableChildAfterDelay : MonoBehaviour
 {
-    [SerializeField] private lockInCenter snapToCenter;
+    [SerializeField] private LockInCenter snapToCenter;
     [SerializeField] private float delay = 5f;
     [SerializeField] private Button actionButton;
 
@@ -27,10 +27,18 @@ public class EnableChildAfterDelay : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
+        // Enable the CoffeeBeans child object if it exists
         Transform coffeeBeans = snappedObject.transform.Find("CoffeeBeans");
         if (coffeeBeans != null)
         {
             coffeeBeans.gameObject.SetActive(true);
+        }
+
+        // Disable isKinematic on the snapped object's Rigidbody
+        Rigidbody rb = snappedObject.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.isKinematic = false;
         }
     }
 }

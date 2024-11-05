@@ -905,7 +905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &125581958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5200,6 +5200,54 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &357642242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357642237}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.00087122654, y: 0.0007452013, z: 0.0012405906}
+  m_Center: {x: 0.00003541507, y: -0.000015869178, z: 0.00062029547}
+--- !u!1 &363176646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8969585180989120269, guid: eece161f76ea79f468e5b675b698398d,
+    type: 3}
+  m_PrefabInstance: {fileID: 415276243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &363176650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363176646}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.001, y: 0.001, z: 0.001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &379689397
 GameObject:
   m_ObjectHideFlags: 0
@@ -5629,7 +5677,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8969585180989120269, guid: eece161f76ea79f468e5b675b698398d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 363176650}
   m_SourcePrefab: {fileID: 100100000, guid: eece161f76ea79f468e5b675b698398d, type: 3}
 --- !u!1 &415276244 stripped
 GameObject:
@@ -5807,7 +5859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &439713403
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5816,7 +5868,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439713402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.132}
+  m_LocalPosition: {x: 0, y: 0, z: -0.183}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5824,7 +5876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.403, y: -0.226}
+  m_AnchoredPosition: {x: 1.426, y: -0.198}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &439713404
@@ -7774,7 +7826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &596791541
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10604,6 +10656,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 357642238}
+    - targetCorrespondingSourceObject: {fileID: -6733177361254619370, guid: ec3115a8526a48448af0a6c594511465,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 357642242}
   m_SourcePrefab: {fileID: 100100000, guid: ec3115a8526a48448af0a6c594511465, type: 3}
 --- !u!4 &932477894 stripped
 Transform:
@@ -14255,7 +14311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1163432705
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17736,7 +17792,7 @@ GameObject:
   - component: {fileID: 1390233246}
   - component: {fileID: 1390233245}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: InteractCoffeeBowl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18795,8 +18851,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.1364132, y: 2.037958, z: 1}
+  m_Center: {x: 0.024243295, y: 1.1442195, z: 0}
 --- !u!23 &1518543251
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20508,8 +20564,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0098, y: 0.659, z: -0.0844}
-  m_LocalScale: {x: 0.24536537, y: 0.23604001, z: 0.23404458}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 0.3053813, y: 0.18596885, z: 0.1843967}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1355384346}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20612,6 +20668,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snapTag: CoffeeCup
+  delay: 5
+  childObjectToEnable: {fileID: 0}
 --- !u!1 &1668294939
 GameObject:
   m_ObjectHideFlags: 0
@@ -21399,8 +21457,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1658704852}
-        m_TargetAssemblyTypeName: EnableChildAfterDelay, Assembly-CSharp
+      - m_Target: {fileID: 1658704853}
+        m_TargetAssemblyTypeName: LockInCenter, Assembly-CSharp
         m_MethodName: OnButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -25491,7 +25549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1996866073
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27240,7 +27298,7 @@ PrefabInstance:
     - target: {fileID: 758656119703261393, guid: fa4fe4a8612330942a66d4d81b98edbf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.478
+      value: -3.903
       objectReference: {fileID: 0}
     - target: {fileID: 758656119703261393, guid: fa4fe4a8612330942a66d4d81b98edbf,
         type: 3}
@@ -27250,7 +27308,7 @@ PrefabInstance:
     - target: {fileID: 758656119703261393, guid: fa4fe4a8612330942a66d4d81b98edbf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -55.26
+      value: -53.986
       objectReference: {fileID: 0}
     - target: {fileID: 758656119703261393, guid: fa4fe4a8612330942a66d4d81b98edbf,
         type: 3}
