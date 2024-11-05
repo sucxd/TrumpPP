@@ -12,6 +12,15 @@ TagManager:
   - Shape
   - Floor
   - WaterBall
+  - 1
+  - 2
+  - 3
+  - 4
+  - Key
+  - Door
+  - FlashLight
+  - Electric
+  - QuestObject
   layers:
   - Default
   - TransparentFX
