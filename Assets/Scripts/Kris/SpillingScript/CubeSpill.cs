@@ -20,6 +20,7 @@ public class CubeSpill : MonoBehaviour
         if (tiltAngle > 90f)
         {
             SpawnBall();
+            
         }
     }
 
