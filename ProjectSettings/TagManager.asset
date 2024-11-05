@@ -11,6 +11,7 @@ TagManager:
   - DoorLock
   - Shape
   - Floor
+  - WaterBall
   layers:
   - Default
   - TransparentFX
