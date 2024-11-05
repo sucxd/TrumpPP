@@ -5219,8 +5219,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00087122654, y: 0.0007452013, z: 0.0012405906}
-  m_Center: {x: 0.00003541507, y: -0.000015869178, z: 0.00062029547}
+  m_Size: {x: 0.00087122654, y: 0.0007452013, z: 0.0013133553}
+  m_Center: {x: 0.00003541507, y: -0.000015869178, z: 0.0007691937}
 --- !u!1 &363176646 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8969585180989120269, guid: eece161f76ea79f468e5b675b698398d,
@@ -5370,7 +5370,6 @@ GameObject:
   - component: {fileID: 388963371}
   - component: {fileID: 388963370}
   - component: {fileID: 388963369}
-  - component: {fileID: 388963368}
   m_Layer: 0
   m_Name: CoffeeOnSpoon
   m_TagString: SpoonTip
@@ -5378,33 +5377,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!54 &388963368
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388963367}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &388963369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5424,8 +5396,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.4629936, y: 2.4180768, z: 1}
+  m_Center: {x: 0.111766525, y: 0.7090392, z: 2.0279358e-15}
 --- !u!23 &388963370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5571,8 +5543,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7032198239523673546, guid: eece161f76ea79f468e5b675b698398d,
         type: 3}
+      propertyPath: m_Size.y
+      value: 0.0007505182
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032198239523673546, guid: eece161f76ea79f468e5b675b698398d,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.00091663236
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032198239523673546, guid: eece161f76ea79f468e5b675b698398d,
+        type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032198239523673546, guid: eece161f76ea79f468e5b675b698398d,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.000000029802278
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032198239523673546, guid: eece161f76ea79f468e5b675b698398d,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 7.59704e-12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032198239523673546, guid: eece161f76ea79f468e5b675b698398d,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.0005738283
       objectReference: {fileID: 0}
     - target: {fileID: 7461047442897668897, guid: eece161f76ea79f468e5b675b698398d,
         type: 3}
@@ -10854,8 +10851,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0008361783, y: 0.0008361782, z: 0.00044753568}
-  m_Center: {x: 2.910383e-11, y: 0, z: 0.0018891721}
+  m_Size: {x: 0.00083617825, y: 0.0008361782, z: 0.0006356303}
+  m_Center: {x: 3.7252902e-11, y: -2.1663347e-18, z: 0.0017951264}
 --- !u!1 &940132854
 GameObject:
   m_ObjectHideFlags: 0
@@ -14810,7 +14807,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   onTriggerExit:
     m_PersistentCalls:
@@ -14842,7 +14839,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 415276244}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -14878,8 +14875,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00030000004, y: 0.0010999998, z: 0.000049999988}
-  m_Center: {x: -3.7252902e-11, y: -0.000397425, z: -0.000019971196}
+  m_Size: {x: 0.00009509643, y: 0.0009298403, z: 0.000049999988}
+  m_Center: {x: 0.0000065010786, y: -0.0004825055, z: -0.000019971194}
 --- !u!1 &1198194976
 GameObject:
   m_ObjectHideFlags: 0
@@ -17772,7 +17769,7 @@ GameObject:
   - component: {fileID: 1390233245}
   m_Layer: 0
   m_Name: InteractCoffeeBowl
-  m_TagString: Untagged
+  m_TagString: CoffeeBeans
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
