@@ -8,7 +8,6 @@ public class Sorter : MonoBehaviour
     public GameObject squareSocket;
     public GameObject triangleSocket;
 
-    // Call this method when a shape is placed into a socket
     public void CheckCombination()
     {
         bool cylinderCorrect = IsShapeInSocket(cylinderSocket);
@@ -21,14 +20,13 @@ public class Sorter : MonoBehaviour
             GameObject sorter_door_test = GameObject.Find("sorter_door_test");
             if (sorter_door_test != null)
             {
-                Destroy(sorter_door_test); // This will remove the wall from the scene
+                Destroy(sorter_door_test);
             }
         }
     }
 
     private bool IsShapeInSocket(GameObject socket)
     {
-        // Check if there is exactly one child (the shape) in the socket
         return socket.transform.childCount == 1; 
     }
 }
