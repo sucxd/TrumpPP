@@ -9848,23 +9848,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1014530353}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &758323269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758323267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfb0b35051d7d0140b3955964cfac159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coffeeCups:
-  - {fileID: 2043271797}
-  freezeButton: {fileID: 1725323240}
-  newMesh: {fileID: 0}
-  freezeDuration: 3
 --- !u!114 &758323270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12115,10 +12098,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3989549305464805399, guid: b5be909d3f8cb7348a40baecaeb4a855,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 758323269}
     - targetCorrespondingSourceObject: {fileID: 3989549305464805399, guid: b5be909d3f8cb7348a40baecaeb4a855,
         type: 3}
       insertIndex: -1
@@ -26093,12 +26072,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041497761}
   m_Mesh: {fileID: 8393969432434051992, guid: 2f973f209ac89254985755851cc6f528, type: 3}
---- !u!1 &2043271797 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1490797044403321618, guid: d464bfa54c0e81641b1fe1219c89b9ee,
-    type: 3}
-  m_PrefabInstance: {fileID: 7662815566306679163}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2045734860
 GameObject:
   m_ObjectHideFlags: 0
@@ -27365,6 +27338,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin gooood(XR Rig)
       objectReference: {fileID: 0}
+    - target: {fileID: 8588876870351201259, guid: fa4fe4a8612330942a66d4d81b98edbf,
+        type: 3}
+      propertyPath: brainRotManager
+      value: 
+      objectReference: {fileID: 758323270}
     - target: {fileID: 9217875991748464659, guid: fa4fe4a8612330942a66d4d81b98edbf,
         type: 3}
       propertyPath: m_PhysicsLayerMask.m_Bits
