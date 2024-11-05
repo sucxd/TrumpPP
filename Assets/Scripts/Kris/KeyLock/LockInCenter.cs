@@ -1,17 +1,20 @@
+using System.Collections;
 using UnityEngine;
 
-public class LockInCenter : MonoBehaviour
-{   
-    [SerializeField]
-    string snapTag = "CoffeeCup"; 
+public class lockInCenter : MonoBehaviour
+{
+    [SerializeField] private string snapTag = "CoffeeCup";
+    private GameObject snappedObject;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(snapTag))
+        if (other.CompareTag(snapTag) && snappedObject == null) // Only snap if no object is currently snapped
         {
-            other.transform.position = transform.position;
-            other.transform.rotation = transform.rotation;
+            snappedObject = other.gameObject;
+            snappedObject.transform.position = transform.position;
+            snappedObject.transform.rotation = transform.rotation;
 
-            Rigidbody rb = other.GetComponent<Rigidbody>();
+            Rigidbody rb = snappedObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
                 rb.isKinematic = true;
@@ -21,13 +24,19 @@ public class LockInCenter : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag(snapTag))
+        if (other.gameObject == snappedObject)
         {
-            Rigidbody rb = other.GetComponent<Rigidbody>();
+            Rigidbody rb = snappedObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
                 rb.isKinematic = false;
             }
+            snappedObject = null; // Clear the snapped reference
         }
+    }
+
+    public GameObject GetSnappedObject()
+    {
+        return snappedObject;
     }
 }
