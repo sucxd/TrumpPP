@@ -17,5 +17,8 @@ public class CoffeeTrigger : MonoBehaviour
         }
     }
 
-
+    public void NextTask() 
+    {
+        task.CompleteTask(1);
+    }
 }

@@ -4693,6 +4693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 319333447}
+  - component: {fileID: 319333448}
   m_Layer: 0
   m_Name: WIREBOX
   m_TagString: Electric
@@ -4720,6 +4721,29 @@ Transform:
   - {fileID: 1643358017}
   m_Father: {fileID: 1304239295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &319333448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319333446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd16361fc83556542becc57cfde1bfcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskManager: {fileID: 2019889248}
+  action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 22a81561-fd70-4928-bd1c-8d8b01798a8d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  Pickedup: 0
 --- !u!1 &325486354
 GameObject:
   m_ObjectHideFlags: 0
@@ -17280,6 +17304,51 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1874708310}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1282411288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282411290}
+  - component: {fileID: 1282411289}
+  m_Layer: 0
+  m_Name: coffee
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1282411289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282411288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0737f2d287dc5294aaa545fcdcec5042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  task: {fileID: 2019889248}
+--- !u!4 &1282411290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282411288}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1286892121
 GameObject:
   m_ObjectHideFlags: 0
@@ -19651,7 +19720,7 @@ Transform:
   m_GameObject: {fileID: 1370483014}
   serializedVersion: 2
   m_LocalRotation: {x: -0.50000006, y: 0.5, z: -0.49999994, w: 0.5}
-  m_LocalPosition: {x: 3.749, y: 1.2423, z: -50.2301}
+  m_LocalPosition: {x: 9.41, y: 1.2423, z: -48.82}
   m_LocalScale: {x: 2.3246222, y: 0.49524722, z: 0.045140002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24013,6 +24082,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1282411289}
+        m_TargetAssemblyTypeName: CoffeeTrigger, Assembly-CSharp
+        m_MethodName: NextTask
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1725323241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26187,7 +26268,7 @@ PrefabInstance:
     - target: {fileID: 1432634183278953119, guid: 2431da57243982c499a981ad8e9005f2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.01
+      value: -12.91
       objectReference: {fileID: 0}
     - target: {fileID: 1432634183278953119, guid: 2431da57243982c499a981ad8e9005f2,
         type: 3}
@@ -27966,6 +28047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
+  taskManager: {fileID: 0}
   wire1: 0
   wire2: 0
   wire3: 0
@@ -29364,8 +29446,8 @@ MonoBehaviour:
   tasks:
   - Make Coffee
   - Climb and Check the Vent
-  - Find the Secret Door
-  - Explore the Room and Find Hidden Things
+  - Find the Hidden Door
+  - Explore the Dark Room and Find Hidden Things
   - Find the WireBox and Connect the Wires
   - Escape the House
 --- !u!1 &2023532922
@@ -29787,7 +29869,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.21927968, y: 0, z: -114.93}
-  m_LocalScale: {x: 0.53615236, y: 1, z: 1}
+  m_LocalScale: {x: 0.53615236, y: 1.7163, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1957697556}
@@ -39695,6 +39777,7 @@ BoxCollider:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1282411290}
   - {fileID: 672029958536985965}
   - {fileID: 508488478}
   - {fileID: 62733445}
