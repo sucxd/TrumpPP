@@ -8726,6 +8726,7 @@ GameObject:
   - component: {fileID: 661908672}
   - component: {fileID: 661908671}
   - component: {fileID: 661908670}
+  - component: {fileID: 661908675}
   m_Layer: 0
   m_Name: Drawer 2
   m_TagString: Untagged
@@ -8998,6 +8999,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661908668}
   m_Mesh: {fileID: -2966096949651797896, guid: 92f7f0c3066022c4293ab42beb46270d, type: 3}
+--- !u!65 &661908675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661908668}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011807404, y: 0.008323752, z: 0.00055159687}
+  m_Center: {x: 0.00037431807, y: 0.0043171225, z: 0.0056432243}
 --- !u!1 &666055010
 GameObject:
   m_ObjectHideFlags: 0
@@ -12711,6 +12733,7 @@ GameObject:
   - component: {fileID: 1066097763}
   - component: {fileID: 1066097769}
   - component: {fileID: 1066097768}
+  - component: {fileID: 1066097770}
   m_Layer: 0
   m_Name: Drawer 1
   m_TagString: Untagged
@@ -13092,6 +13115,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &1066097770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066097760}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.012051796, y: 0.008323752, z: 0.00052534876}
+  m_Center: {x: 0.0002521521, y: -0.004317091, z: 0.005630064}
 --- !u!1 &1076544665
 GameObject:
   m_ObjectHideFlags: 0
@@ -24267,6 +24311,7 @@ GameObject:
   - component: {fileID: 1882835748}
   - component: {fileID: 1882835747}
   - component: {fileID: 1882835746}
+  - component: {fileID: 1882835751}
   m_Layer: 0
   m_Name: Drawer 2
   m_TagString: Untagged
@@ -24539,6 +24584,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882835744}
   m_Mesh: {fileID: -2966096949651797896, guid: 92f7f0c3066022c4293ab42beb46270d, type: 3}
+--- !u!65 &1882835751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882835744}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011755818, y: 0.008323752, z: 0.00044061182}
+  m_Center: {x: 0.00040011824, y: 0.0043171016, z: 0.005587741}
 --- !u!1 &1901175978
 GameObject:
   m_ObjectHideFlags: 0
@@ -24660,6 +24726,7 @@ GameObject:
   - component: {fileID: 1904560956}
   - component: {fileID: 1904560955}
   - component: {fileID: 1904560954}
+  - component: {fileID: 1904560961}
   m_Layer: 0
   m_Name: Drawer 1
   m_TagString: Untagged
@@ -25041,6 +25108,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904560952}
   m_Mesh: {fileID: -4001191545892141051, guid: 92f7f0c3066022c4293ab42beb46270d, type: 3}
+--- !u!65 &1904560961
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904560952}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011931254, y: 0.008323752, z: 0.00041218637}
+  m_Center: {x: 0.00031241358, y: -0.004317097, z: 0.0055735707}
 --- !u!1 &1910302822
 GameObject:
   m_ObjectHideFlags: 0
