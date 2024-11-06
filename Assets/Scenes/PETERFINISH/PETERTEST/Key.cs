@@ -15,29 +15,36 @@ public class Key : MonoBehaviour
         action.AddBinding("<XRController>{RightHand}/grip");
         action.Enable();
     }
+    void Update() {
+        
+    }
 
-    public void PickUp() 
+    // public void PickUp() 
+    // {
+    //     if (gameObject.CompareTag("Key") && !Pickedup)
+    //     { 
+    //         Pickedup = true;
+    //         taskManager.CompleteTask(2);
+    //         Debug.Log("Works");
+    //     }
+    // }
+
+
+
+    void OnTriggerEnter(Collider other)
     {
-        if (gameObject.CompareTag("Key") && !Pickedup)
+        if (other.CompareTag("Player") && !Pickedup)
         { 
             Pickedup = true;
             taskManager.CompleteTask(2);
             Debug.Log("Works");
         }
-    }
-
-    private void Update()
-    {
-        
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
         if (other.CompareTag("Door") && Pickedup)
         {
             taskManager.CompleteTask(3); // Update the UI for the next task
             Destroy(gameObject); // Remove the key after pickup
             Debug.Log("Works");   
         }
+  
     }
 }

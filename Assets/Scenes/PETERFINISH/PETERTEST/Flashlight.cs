@@ -16,16 +16,16 @@ public class Flashlight : MonoBehaviour
         action.Enable();
     }
 
-    public void PickedUp() 
+
+    void OnTriggerEnter(Collider other)
     {
-        if (gameObject.CompareTag("FlashLight") && !Pickedup) 
-        { 
-        
+        if (other.CompareTag("Player") && !Pickedup)
+        {
+
             Pickedup = true;
             taskManager.CompleteTask(4);
             Debug.Log("Works");
         }
-    
     }
 
     private void Update()
