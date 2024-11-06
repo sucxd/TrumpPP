@@ -21,6 +21,7 @@ TagManager:
   - FlashLight
   - Electric
   - QuestObject
+  - Button
   layers:
   - Default
   - TransparentFX
