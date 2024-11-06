@@ -8427,6 +8427,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3265010738657797547, guid: cf8e1c2b2b260dd4dac4d31e59c44719,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4330752801498211626, guid: cf8e1c2b2b260dd4dac4d31e59c44719,
         type: 3}
       propertyPath: m_Name
@@ -8447,10 +8452,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.42
       objectReference: {fileID: 0}
+    - target: {fileID: 6721215041985733816, guid: cf8e1c2b2b260dd4dac4d31e59c44719,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301878056445285456, guid: cf8e1c2b2b260dd4dac4d31e59c44719,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8866118404266107468, guid: cf8e1c2b2b260dd4dac4d31e59c44719,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027843610946448160, guid: cf8e1c2b2b260dd4dac4d31e59c44719,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -80221,7 +80241,7 @@ PrefabInstance:
     - target: {fileID: 1445950876804775142, guid: 5eea5f366981b9140ae3823e5ec6fe27,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6968276496875729648, guid: 5eea5f366981b9140ae3823e5ec6fe27,
         type: 3}
