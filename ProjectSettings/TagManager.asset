@@ -12,6 +12,7 @@ TagManager:
   - Shape
   - Floor
   - WaterBall
+  - Button
   layers:
   - Default
   - TransparentFX
