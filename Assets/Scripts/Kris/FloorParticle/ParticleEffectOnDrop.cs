@@ -13,6 +13,7 @@ public class ParticleEffectOnFloor : MonoBehaviour
             Quaternion spawnRotation = Quaternion.Euler(-90f, 0f, 0f);
             
             GameObject particleInstance = Instantiate(particlePrefab, spawnPosition, spawnRotation);
+            Object.Destroy(particleInstance, 5f);
             
         }
     }
