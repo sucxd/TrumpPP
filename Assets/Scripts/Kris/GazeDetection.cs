@@ -55,7 +55,7 @@ public class GazeDetection : MonoBehaviour
                     {
                         if (brainRotManager != null)
                         {
-                            brainRotManager.ApplyBrainRot(0.1f);
+                            brainRotManager.ApplyBrainRot(0.2f);
                         }
 
                         if (continuousMoveProvider != null)
@@ -63,7 +63,7 @@ public class GazeDetection : MonoBehaviour
                             continuousMoveProvider.moveSpeed = Mathf.Max(continuousMoveProvider.moveSpeed - 0.1f, 0f);
                         }
 
-                        vignetteEffect.IncreaseVignette(0.1f);
+                        vignetteEffect.IncreaseVignette(0.2f);
                         timeLookingAtUI = 0f;
                     }
                 }
