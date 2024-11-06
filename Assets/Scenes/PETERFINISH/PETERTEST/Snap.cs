@@ -18,7 +18,7 @@ public class Snap : MonoBehaviour
     private Rigidbody rb;
 
     [SerializeField]
-    private DoorController doorController;
+    private DoorTrigger doorController;
 
     // Start is called before the first frame update
     void Start()

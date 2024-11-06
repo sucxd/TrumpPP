@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class DoorController : MonoBehaviour
+public class DoorTrigger : MonoBehaviour
 {
     public Animator doorAnimator;
     public TaskManager taskManager;
